@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0EBD8;
+    font-family: 'Tilt Neon', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER NAV FIXED*/
+
+header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.up-nav {
+    background-color: #A63446;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.up-nav-container {
+    width: 100%;
+    height: 90%;
+    max-width: 200px;
+    background-color: #A63446;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i {
+    font-size: 18px;
+    color: #F0EBD8;
+}
+
+/*BOTON ARRIBA DEL TODO*/
+
+.button-up {
+    display: none;
+    height: 60px;
+    width: 60px;
+    margin: 25px;
+    background-color: #DC851F;
+    border: 2px solid #F0EBD8;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.button-up i{
+    color: #F0EBD8;
+    font-size: 35px;
+    padding: 13px 0 0 16px;
+}
+
+
+/*LOGOTYPE SECTION*/
+
+.logotype {
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logotype >img {
+    width: 90px;
+    height: 90px;
+}
+
+.logotype > div {
+    width: 450px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+/*NAVIGATION*/
+
+.navigation {
+    width: 100%;
+    height: 40px;
+    background-color: #A63446;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 700px;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    font-size: 18px;
+    color: #F0EBD8;
+    text-decoration: none;
+}
+
+/*IMAGE HEADER*/
+
+.presentation {
+    width: 100%;
+    height: 300px;
+    background-image: url(../resource/header-presentation.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.presentation > h1 {
+    color: #F0EBD8;
+    font-size: 48px;
+}
+
+.presentation > img{
+    width: 400px;
+    height: 400px;
+    border: 3px solid #F0EBD8;
+    border-radius: 5px;
+}
+
+/*INFORMATION SECTION ONE*/
+
+.section-one {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3fr;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    scroll-margin-top: 40px;
+}
+
+.section-one > h2 {
+    grid-column: 1/6;
+    margin: 0;
+    font-size: 48px;
+}
+
+.section-one > p {
+    grid-column: 1/3;
+    grid-row: 2/6;
+    width: 800px;
+    padding: 50px;
+}
+
+.section-one > img{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 3px solid #0D1321;
+    border-radius: 5px;
+}
+
+/*FLEXBOX TITLE SECTION*/
+
+.section-two {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    background-image: url(../resource/flexbox-title.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #0D1321;
+    scroll-margin-top: 40px;
+}
+
+.section-two > h2 {
+    margin: 0px;
+    color: #0D1321;
+    font-size: 48px;
+}
+.section-two > button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0D1321;
+    color: #F0EBD8;
+    border: 2px solid #F0EBD8;
+    border-radius: 5px;;
+}
+
+.section-two button a {
+    color: #F0EBD8;
+    text-decoration: none;
+}
+
+
+/*FLEXBOX INFORMATION*/
+
+.section-three {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 350px;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    scroll-margin-top: 20px;
+}
+
+.section-three-title {
+    font-size: 48px;
+    grid-column: 1/4;
+    justify-self: start;
+}
+
+.section-three-title > p {
+    font-size: 28px;
+    margin: 0px 0px 0px 50px
+}
+
+.section-three-title > h3 {
+    margin: 0px 0px 0px 50px
+}
+.section-three .card-two {
+    background-color: #DC851F;
+    width: 225px;
+    height: 300px;
+    padding: 10px;
+    border: 4px solid #0D1321;
+    border-radius: 10px;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.section-three .card-two > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0D1321;
+    background-color: #F0EBD8;
+    border-radius: 30%;
+}
+
+.section-three .card-two a {
+    text-decoration: none;
+    color: #F0EBD8;
+}
+
+/*CSS GRID TITLE SECTION*/
+
+.section-four {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    background-image: url(../resource/cssgrid-title.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #0D1321;
+    scroll-margin-top: 40px;
+}
+
+.section-four > h2 {
+    margin: 0px;
+    color: #0D1321;
+    font-size: 48px;
+}
+.section-four > button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0D1321;
+    color: #F0EBD8;
+    border: 2px solid #F0EBD8;
+    border-radius: 5px;
+}
+
+.section-four button a {
+    color: #F0EBD8;
+    text-decoration: none;
+}
+
+/*CSS GRID INFORMATION*/
+
+.section-five {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 350px;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    scroll-margin-top: 20px;
+}
+
+.section-five-title {
+    font-size: 48px;
+    grid-column: 1/4;
+    justify-self: start;
+}
+
+.section-five-title > p {
+    font-size: 28px;
+    margin: 0px 0px 0px 50px
+}
+
+.section-five-title > h3 {
+    margin: 0px 0px 0px 50px
+}
+.section-five .card-section-two {
+    background-color: #A63446;
+    width: 225px;
+    height: 300px;
+    padding: 10px;
+    border: 4px solid #0D1321;
+    border-radius: 10px;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.section-five .card-section-two > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0D1321;
+    background-color: #F0EBD8;
+    border-radius: 30%;
+}
+
+.section-five .card-section-two a {
+    text-decoration: none;
+    color: #F0EBD8;
+}
+
+
+/*GIT & GITHUB TITLE SECTION*/
+
+.section-six {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    background-image: url(../resource/gitygithub-title.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #0D1321;
+    scroll-margin-top: 40px;
+}
+
+.section-six > h2 {
+    margin: 0px;
+    color: #A63446;
+    font-size: 48px;
+}
+.section-six > button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #A63446;
+    border: 2px solid #F0EBD8;
+    border-radius: 5px;
+}
+
+.section-six button a {
+    color: #F0EBD8;
+    text-decoration: none;
+}
+
+/*GIT & GITHUB INFORMATION*/
+
+.section-seven {
+    margin: 0px 40px 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    scroll-margin-top: 50px;
+}
+
+.paragraph {
+    padding: 20px;
+    display: inherit;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border: 3px solid #0D1321;
+    border-radius: 10px;
+}
+
+.paragraph > h2 {
+    font-size: 48px;
+}
+
+.paragraph > p {
+    grid-column: 1/3;
+    font-size: 18px;
+}
+
+.paragraph > img {
+    height: 100px;
+    width: 100px;
+    justify-self: start;
+    align-self: center;
+}
+
+/*FOOTER FOOTER FOOTER*/
+
+footer {
+    font-size: 18px;
+    background-color: #0D1321;
+    color: #F0EBD8;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-gap: 20px;
+}
+
+.footer-container {
+    padding: 0px 40px 0px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-items: center;
+}
+
+.card {
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.card > h4{
+    font-size: 22px;
+}
+
+.card > input {
+    background-color: #0D1321;
+    border: none;
+    border-bottom: 2px solid #F0EBD8;
+}
+
+.card > button {
+    width: 100px;
+    height: 25px;
+    background-color: #F0EBD8;
+    border: none;
+    border-radius: 10px;
+}
+
+.card > p {
+    padding: 0 20px 0 20px;
+}
+
+hr {
+    width: 95%;
+}
+
+.footer-copy {
+    margin: 0 0 10px 30px;
+}
